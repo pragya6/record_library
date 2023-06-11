@@ -1,29 +1,7 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
+import styles from './BreadBox.module.css';
 import dayjs from 'dayjs';
-
-const styles = StyleSheet.create({
-  breadContainer: {
-    width: '100%',
-    padding: 15,
-    borderRadius: 15,
-    borderRightWidth: 2,
-    borderBottomWidth: 2,
-    backgroundColor: 'white',
-    borderRightColor: '#888888',
-    borderBottomColor: '#88888',
-  },
-  dateNumber: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  nameBold: {
-    fontWeight: 'bold',
-    fontSize: 18,
-    color: 'black',
-  },
-});
 
 const BreadBox = props => {
   const date = dayjs(props.updatedAt).format('d.MMM.YY');
