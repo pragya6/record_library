@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import {
   Text,
   View,
-  StyleSheet,
   TouchableWithoutFeedback,
   Keyboard,
   TextInput,
@@ -15,6 +14,7 @@ import BreadBox from './components/BreadBox';
 import IconButton from './components/IconButton';
 import Form from './components/Form';
 import axios from 'axios';
+import styles from './App.module.css';
 
 const cstmTextProps = {
   style: {
@@ -39,53 +39,6 @@ const cstmTextInputProps = {
   },
 };
 setCustomTextInput(cstmTextInputProps);
-
-const styles = StyleSheet.create({
-  appContainer: {
-    flex: 1,
-  },
-  appBg: {
-    padding: 15,
-    position: 'relative',
-    alignSelf: 'flex-start',
-    flexDirection: 'column',
-    gap: 25,
-    height: '100%',
-    width: '100%',
-  },
-  appHeading: {
-    padding: 20,
-    textAlign: 'center',
-    color: 'black',
-    fontSize: 28,
-    fontFamily: 'RobotoMono-Bold',
-  },
-  dataView: {
-    gap: 15,
-    display: 'flex',
-    height: 'auto',
-    position: 'relative',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'flex-start',
-  },
-  scrollView: {
-    display: 'flex',
-    width: '100%',
-    flexDirection: 'column',
-  },
-  contentContainer: {
-    gap: 15,
-    flexGrow: 1,
-    justifyContent: 'center',
-    alignItems: 'flex-start',
-  },
-  IconButton: {
-    position: 'absolute',
-    right: 10,
-    bottom: 15,
-  },
-});
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(false);

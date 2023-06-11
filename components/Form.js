@@ -1,27 +1,10 @@
 import React, {useState} from 'react';
-import {StyleSheet, TextInput, Text, View} from 'react-native';
+import {TextInput, Text, View} from 'react-native';
 import IconButton from './IconButton';
 import {faClose, faRightToBracket} from '@fortawesome/free-solid-svg-icons';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import axios from 'axios';
-
-const styles = StyleSheet.create({
-  formContainer: {
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 20,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  formHeader: {
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-});
+import styles from './Form.module.css';
 
 const Form = props => {
   //Initial Variables

@@ -1,0 +1,13 @@
+.iconButton{
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50px;
+  border-bottom-color: '#080808';
+  border-bottom-width: 2px;
+  border-right-color: '#080808';
+  border-right-width: 2px;
+}

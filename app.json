@@ -1,4 +1,8 @@
 {
   "name": "RecordLibrary",
-  "displayName": "RecordLibrary"
+  "displayName": "RecordLibrary",
+  "packagerOpts": {
+    "config": "metro.config.js",
+    "sourceExts": ["js", "jsx", "css"]
+  }
 }

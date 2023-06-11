@@ -2,7 +2,11 @@
   width: 100%;
   padding: 15px;
   border-radius: 15px;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background-color: white;
+  border-bottom-color: '#080808';
+  border-bottom-width: 2px;
+  border-right-color: '#080808';
+  border-right-width: 2px;
 }
 
 .dateNumber{

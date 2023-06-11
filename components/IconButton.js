@@ -1,20 +1,7 @@
 import React from 'react';
-import {TouchableOpacity, Text, StyleSheet} from 'react-native';
+import {TouchableOpacity, Text} from 'react-native';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-
-const styles = StyleSheet.create({
-  iconButton: {
-    display: 'flex',
-    flexDirection: 'row',
-    padding: 15,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'white',
-    borderRadius: 50,
-    borderBottomColor: 'black',
-    borderBottomWidth: 2,
-  },
-});
+import styles from './IconButton.module.css';
 
 const IconButton = props => {
   return (
